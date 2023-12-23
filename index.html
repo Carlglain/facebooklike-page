@@ -1,6 +1,6 @@
 <!DOCTYPE html>
 <html lang="en">
-<head>
+<head >
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Facabooklike page</title>
@@ -8,7 +8,7 @@
 </head>
 <body>
     <header class="h">
-       <div id="logo"><img src="download.png" alt="facebook"></div> 
+       <img id="logo" src="download.png" alt="facebook">
        <div class="hinput">
             <div class="hinput1">
                 <label for="l1">Email of Phone😂</label> <br>
@@ -19,16 +19,17 @@
                 <form action="mailto:carlglainnyuysemo@gmail.com" method="post" enctype="text/plain">
                 <input type="password" name="password" value="password" >
                 </form> <br>
-                <a href="#">Forgotten account?</a>
+                <a class="h1a" href="#">Forgotten account?</a>
 
             </div> 
-            <div class="hinput3"><br><a href="#">Log in</a></div>   
+            <br>
+           <button  class="hinput3"> <a href="#">Log in</a></button>
       </div> 
     </header>
     <main class="m">
         <div class="mp1">
             <p>Facebook helps you connect and share with the people in your life</p>
-            <img src="people.jpeg" alt="connected people">
+            <img style="width: 400px;" src="people.jpeg" alt="connected people">
         </div>
         <div class="mp2">
             <h1>Create an accoount</h1>
@@ -36,10 +37,11 @@
                 <form action="mailto:carlglainnyuysemo@gmail.com" method="post" enctype="text/plain">
                     <input type="text" name="First_name" value="First name" >
                     <input type="text" name="Surname" value="Surname"> <br>
-                    <input type="text" value="Mobile number or email address" name="Contact"> <br>
-                    <input type="text" value="Re-enter mobile number or email address" name="confirmContact"> <br>
+                    <input class="inputlong" type="text" value="Mobile number or email address" name="Contact"> <br>
+                    <input class="inputlong" type="text" value="Re-enter mobile number or email address" name="confirmContact"> <br>
                     <input type="text" name="Password" value="New password"> <br>
                     <label for="l3">Birthday</label>
+                    <div style="display: inline-block;">
                     <select name="Day" id="">
                         <option selected>Day</option>
                         <option value="day">1</option>
@@ -54,16 +56,20 @@
                         <option value="m">3</option>
                         <option value="m">4</option>
                     </select>
-                    <select name="Year" id="">
-                        <option selected>Year</option>
-                        <option value="y">1999</option>
-                        <option value="y">2000</option>
-                        <option value="y">2001</option>
-                        <option value="y">2002</option>
-                    </select><br>
+                    
+                        <select name="Year" id="">
+                            <option selected>Year</option>
+                            <option value="y">1999</option>
+                            <option value="y">2000</option>
+                            <option value="y">2001</option>
+                            <option value="y">2002</option>
+                        </select>
+                        <a  style="text-decoration: none; float: right; width: 200px; line-height: 1; padding-left: 10px;" href="#">why do i need to provide my date of birth</a>
+                    </div>
+                    <br>
                     <input type="radio" name="r1" value="gender" id="l4"> <label for="l4">Female</label>
                     <input type="radio" name="r1" value="gener" id="l5"> <label for="l5">Male</label>
-                    <p>By clicking Create an account you agree to our 
+                    <p class="cookies">By clicking Create an account you agree to our 
                         <a href="#">Terms</a> and that you have read our <a href="#">Data Policy</a>
                         , including our <a href="#">Cookie Use</a>
                     </p>
@@ -72,5 +78,13 @@
             
         </div>
     </main>
+    <footer>
+        <div class="bottom-container">
+            <a class="footer-link" href="https://www.linkedin.com/">LinkedIn</a>
+            <a class="footer-link" href="https://twitter.com/">Twitter</a>
+            <a class="footer-link" href="https://www.appbrewery.co/">Website</a>
+            <p style="color:#EAF6F6;">© Carlstorm. all iz well</p>
+          </div>
+    </footer>
 </body>
 </html>
